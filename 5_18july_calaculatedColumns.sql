@@ -26,7 +26,7 @@ select *,
         when currency='usd' then revenue*100
         else revenue end
 	end as revenue_milln,
-    	case
+    	case                             
 		when unit='thousands' then case
 			when currency='inr' then budget/1000
             when currency='usd' then (budget*100)/1000
