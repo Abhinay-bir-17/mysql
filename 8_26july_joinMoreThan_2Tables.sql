@@ -1,5 +1,5 @@
-select * from actors;-- actor_id name birth_year
-select * from movie_actor;-- movie_id actor_id
+select * from actors;-- actor_id name birth_year ;
+select * from movie_actor;-- movie_id actor_id ;
 
 -- joining 3 tables
 select m.movie_id, title,ac.name as actors from
@@ -47,5 +47,5 @@ select m.title, f.revenue,f.currency,f.unit,
 from movies m 
 join financials f on m.movie_id=f.movie_id
 join languages l on l.language_id=m.language_id
-where 
+where l.name='Hindi';
 ;
